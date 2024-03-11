@@ -16,25 +16,27 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="conteiner">
-        <nav>
-          <!--logo -->
-          <a href="/">
-            <img src="./Logo/logo.svg" alt="логотип сучасної пекарні" />
-          </a>
+        <div class="header-conteiner">
+          <nav class="header-nav">
+            <!--logo -->
+            <a href="/">
+              <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
+            </a>
 
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <!--замовити дзвінок-->
-        <button class="button" type="button">Замовити дзвінок</button>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <!--замовити дзвінок-->
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
 
@@ -47,8 +49,8 @@
           </h1>
         </div>
       </section>
-      <!--Новий формат традицій-->
-      <section>
+      <!--наші переваги-->
+      <section class="advantages-section">
         <div class="conteiner">
           <h2 class="hidden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -58,49 +60,71 @@
           </ul>
         </div>
       </section>
+      <!--Новий формат традицій-->
       <section class="traditions-section section" id="traditions-section">
         <div class="conteiner">
-          <h2 class="traditions-title section-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі—
-            <span class="brand">5 хвилин і замовлення готове</span>. А ще у
-            наших пекарень стильний дизайн та висока якість обслуговування
-          </p>
-          <img
-            src="./Logo/Baker-man.jpg"
-            alt="Чоловік пекар дивиться на хліб із посмішкою"
-          />
+          <div class="traditions-conteiner">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів
+              </p>
+              <p class="traditions-text">
+                Ми працюємо як найвідоміші мережі —
+                <span class="brand">5 хвилин і замовлення готове</span>. А ще у
+                наших пекарень стильний дизайн та висока якість обслуговування
+              </p>
+            </div>
+            <img
+              src="./images/Baker-man.jpg"
+              alt="Чоловік пекар дивиться на хліб із посмішкою"
+            />
+          </div>
         </div>
       </section>
       <!--Шеф кухарі-->
       <section class="section" id="chefs-section">
         <div class="conteiner">
-          <h2 class="chefs-title section-title">
-            Наші найкращі <span class="accent"> шеф-кухарі </span>
+          <h2 class="chefs-title section-title centered">
+            Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
-            <li>
+          <ul class="chefs-list">
+            <li class="chefs-item">
               <article>
-                <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випечу для вас найсмачніші вироби!</p>
+                <img
+                  class="chef-fhoto"
+                  src="./images/Nastya-chef.jpg"
+                  alt="Nastya_chef"
+                />
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випечу для вас найсмачніші вироби!</p>
+                </div>
               </article>
             </li>
-            <li>
+            <li class="chefs-item">
               <article>
                 <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кондитерський стаж вже 18 років. SHOP BEKERY - це наша
-                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <img
+                  class="chef-fhoto"
+                  src="./images/Vlas_chef.jpg"
+                  alt="Vlad-chef"
+                />
+                <div>
+                  <p>Привіт, я Влад!</p>
+                  <p>
+                    Мій кондитерський стаж вже 18 років. SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу
+                    випічку!
+                  </p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
@@ -109,11 +133,16 @@
       <!--Формати-->
       <section class="section" id="formats-section">
         <div class="conteiner">
-          <h2 class="fotmats-title section-title">Формати</h2>
-          <ul>
-            <li>
-              <article>
-                <h3 class="formats-title" lang="en">Warlus</h3>
+          <h2 class="fotmats-title section-title centered">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow" width="16" heigth="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title" lang="en">Warlus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
                   <p>Меню: розширене меню</p>
@@ -125,9 +154,9 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <h3 class="format-title" lang="en">Horseshoe</h3>
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="formats-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
                   <p>Меню: найпопулярніші позиції меню</p>
@@ -136,8 +165,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -148,6 +177,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow" width="16" heigth="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <!--Приєднуйся до мережі пекарень-->
@@ -169,11 +203,11 @@
       </section>
     </main>
     <!--Підвал-->
-    <footer>
+    <footer class="footer">
       <div class="conteiner">
         <nav>
           <a href="#"> </a>
-          <img src="./Логотип/logo.svg" alt="логотип сучасної пекарні" />
+          <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
 
           <ul>
             <li><a class="link" href="#">Наші традиції</a></li>
@@ -200,19 +234,23 @@
                 href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D1%96%D1%87%D0%BE%D0%B2%D0%B8%D1%85+%D0%A1%D1%82%D1%80%D1%96%D0%BB%D1%8C%D1%86%D1%96%D0%B2,+54,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4566731,30.4886532,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4ce637bfe1717:0x5370c2254ad1b952!8m2!3d50.4566697!4d30.4912335!16s%2Fg%2F1tfjjn3k?entry=ttu"
                 target="_blank"
               >
-                Україна, м. Київ, вул. Січових Стрільців 54</a
-              >
+                Україна, м. Київ, вул. Січових Стрільців 54
+              </a>
             </li>
             <li>
-              <a href="#">Instagam </a>
-              <!--Instagram-->
+              <a href="#"></a>
+              <svg class="addrees-icon" width="32" heigth="32">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
             </li>
-            <li><a href="#">Fecebok</a></li>
-            <!--Faccebok-->
+            <li><a href="#"></a></li>
+            <svg class="addrees-icon" width="32" heigth="32">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
           </ul>
-          <a class="adress-link" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
+          <a class="adress-link" href="#" target="_blank">
+            Політика конфіденційності
+          </a>
           <p class="adress-copiright">&copy; 2022 Дані захищені</p>
         </address>
       </div>

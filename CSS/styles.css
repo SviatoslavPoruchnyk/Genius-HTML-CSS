@@ -20,6 +20,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
+
 }
 
 h1,
@@ -378,6 +379,14 @@ ul {
     flex-basis: 50%;
 
 }
+.footer-logo, .footer-menu{
+    flex-grow: 1;
+}
+
+.address-list, .address-info{
+    flex-grow: 1;
+}
+
 
 .footer-address {
     display: flex;
@@ -397,10 +406,12 @@ ul {
 
 .addrees-icon {
     fill: var(--color-primary-light);
+    height: 32px;
 }
 
 .addrees-icon:hover {
     fill: var(--color-brand-normal);
+    height: 32px;
 }
 
 .adress-copiright {

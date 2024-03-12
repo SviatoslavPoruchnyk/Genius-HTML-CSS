@@ -8,7 +8,9 @@
 }
 
 /*Base*/
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -31,6 +33,10 @@ h5,
 h6,
 p {
     margin-top: 0;
+}
+
+a {
+    display: inline-block;
 }
 
 address {
@@ -220,6 +226,7 @@ ul {
 
 
 .chefs-title {
+    position: relative;
     max-width: 520px;
     margin: 0 auto 80px;
 
@@ -233,9 +240,24 @@ ul {
     content: '';
 }
 
+.chefs-title::before {
+    position: absolute;
+    left: -360px;
+    bottom: 0;
+
+}
+
+.chefs-title::after {
+    position: absolute;
+    right: -360px;
+    bottom: 0;
+}
+
+
 .chefs-list {
     display: flex;
-    gap: 30px;
+    gap: 40px 30px;
+    flex-wrap: wrap;
 
 }
 
@@ -254,6 +276,15 @@ ul {
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 
+}
+
+.chef-text,
+p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:not(:last-child) {
+    margin-bottom: 0;
 }
 
 .chef-title {
@@ -370,27 +401,32 @@ ul {
 }
 
 /*Footer*/
+.footer {
+    padding: 32px 0;
+}
+
 .footer-conteiner {
     display: flex;
+    gap: 20px;
 }
 
-.footer-nav {
-    display: flex;  
-    flex-basis: 50%;
-
-}
-.footer-logo, .footer-menu{
-    flex-grow: 1;
-}
-
-.address-list, .address-info{
-    flex-grow: 1;
-}
-
-
+.footer-nav,
 .footer-address {
     display: flex;
     flex-basis: 50%;
+    gap: 20px;
+
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
 }
 
 .adress-link {

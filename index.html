@@ -35,7 +35,9 @@
             </ul>
           </nav>
           <!--замовити дзвінок-->
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -167,7 +169,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
-                  <h3 class="formats-title" lang="en">Horseshoe</h3>
+                  <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
                     <p>Меню: найпопулярніші позиції меню</p>
@@ -188,7 +190,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg class="carousel-arrow" width="16" heigth="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -280,5 +282,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./JavaScript/modal.js"></script>
   </body>
 </html>

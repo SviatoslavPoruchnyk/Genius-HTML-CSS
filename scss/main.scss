@@ -4,8 +4,29 @@
 @import './base';
 
 @import './untils/utils';
-
+/*Button*/
+@import './components/buttons';
+/*link*/
+@import './components/links';
+/* Header */
+@import './components/header';
+/* Hero section*/
+@import './components/hero-section';
+/* Advantages section*/
+@import './components/advantages-section';
+/* traditions section */
+@import './components/traditions-section';
+/*Chefs section*/
+@import './components/chefs-title';
+/*Formats section */
+@import './components/formats-section';
+/*Carousel*/
+@import './components/carousel-button';
+/* Contact section*/
+@import './components/contact-section';
 /*Base*/
+
+@import './untils/mixins';
 
 .section {
     padding: 48px 0;
@@ -18,25 +39,6 @@
     padding: 0 24px;
 }
 
-/*Button*/
-@import './components/buttons';
-
-
-
-/*link*/
-@import './components/links';
-
-
-/* Header */
-@import './components/header';
-
-
-/* Hero section*/
-@import './components/hero-section';
-
-
-/* Advantages section*/
-@import './components/advantages-section';
 
 .section-title {
     font-size: 62px;
@@ -52,25 +54,7 @@
     color: var(--color-brand-dark);
 }
 
-/* traditions section */
-@import './components/traditions-section' ;
 
-
-/*Chefs section*/
-
-@import './components/chefs-title';
-
-
-/*Formats section */
-@import './components/formats-section';
-
-
-/*Carousel*/
-@import './components/carousel-button';
-
-
-/* Contact section*/
-@import './components/contact-section';
 
 /*Footer*/
 .footer {

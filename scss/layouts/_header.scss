@@ -9,18 +9,19 @@
         display: flex;
         align-items: center;
         gap: 40px; 
-  }
+    }
 
-   &__nav {
+    &__nav {
      display: flex;
      align-items: center;
-      flex-grow: 1;
+     flex-grow: 1;
      gap: 40px;  
     }
         
     &__menu {
      display: flex;
-     gap: 64px;
+     gap: 62px;
+     flex-grow: 1;
      justify-content: center; 
     }
 }
